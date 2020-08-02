@@ -23,15 +23,14 @@ main {
 
 }
 
-
 .headnav {
     width: 5rem;
     height: 100vh;
     position: fixed;
     margin: 0;
-    padding: 0;'
+    padding: 0;
     display:flex;
-    background-color: black;
+    background-color: rgb(24, 13, 24);
 }
 
 .navmenu {
@@ -72,14 +71,14 @@ main {
 }
 
 .nav-item:hover .nav-text {
-    margin-left: 3rem;
+    margin-left: 2.6rem;
     padding-left:20px;
     display: inline-block;
     position: absolute;
     font-size: 25px;
     color: white;
-    background-color: purple;
-    border-radius: 16px;
+    background: linear-gradient(to right, rgb(24, 13, 24) 0%, purple 100%);
+    border-radius: 7px;
 }
 
 h1 {
