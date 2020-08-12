@@ -3,35 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Julius+Sans+One&family=Rock+Salt&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-        <title>The Homebrewery</title>
+    <title>A D&D Homebrew Companion</title>
 </head>
 <body>
-    <nav class="headnav">
+<div class="container-fluid">
+<header>
+  <nav class="headnav">
         <ul class="navmenu">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="index.html" class="nav-link">
                     <span class="nav-icon"><i class="fas fa-home"></i>
-                    <p class="nav-text">Home</p></span>
-                    </a>
-                 </li>               
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                    <span class="nav-icon"><i class="fas fa-book"></i>
-                    <h3 class="nav-text">My Campaign</h3></span>
+                    <h3 class="nav-text">Home</h3></span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                    <span class="nav-icon"><i class="fas fa-calculator"></i>
+                    <span class="nav-icon"><i class="fas fa-book"></i>
+                    <h3 class="nav-text">Campaign</h3></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                    <span class="nav-icon"><i class="fas fa-magic"></i></i></i></i>
                     <h3 class="nav-text">Generators</h3></span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                    <span class="nav-icon"><i class="fas fa-credit-card"></i>
+                    <span class="nav-icon"><i class="fas fa-credit-card"></i></i></i>
                     <h3 class="nav-text">Shop</h3></span>
                     </a>
                 </li>
@@ -43,11 +45,38 @@
                 </li>
         </ul>
     </nav>
+    <div class="warning">
+        <div class="exclamation"><i class="fas fa-exclamation"></i></div> 
+        <p class="header-warning">BEN-DnD.com is a learning project; there is no database or cloud storage functionality yet. Copy and save any data you want to keep to your device.</p>
+        <div class="exclamation"><i class="fas fa-exclamation"></i></div>
+        </div>
+</header>
+  <div id="nav-placeholder"></div>
 <main>
-    <header><h1>Homebrewed</h1></header>
-        <p>The complete enthusiast's companion to developing unique and wonderous adventures in the D&D verse.</p>
-        <p>Create your own printable adventure's guide, complete with monster stat blocks, puzzles, encounters, maps, NPCs, and more!</p>
+    <div class="centerpiece-container">
+        <div class="centerpiece">
+             <h1 class="logo-text">Brewin'</h1>
+             <h1 class="text-emphasis" id="logo-text-emphasis">^ Ex Nihilo</h1>
+             <div class="twentydie""><i class="fas fa-dice-d20"></i></i></div>
+            <h3 class="byline">The complete companion to developing uniquely spectacular adventures in the D&D verse</h3>
+                <div class="text-background-box">
+            <p class="index-chatter">Create your own homebrewed Adventure's Guide, complete with:
+            <br> encounters, maps, dungeons, shop inventories, NPCs, custom stat blocks, puzzles,  
+            <br> magical items, backgrounds, political heirarches, location-specific loot tables, and more!
+            <br>
+            <br>Begin by clicking 'Campaign' on the navigation menu, or head straight to the 'Generators' for some freestyle fun.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
+<footer>
+    <div class="footer-background">
+    <div class="reddit"><i class="fab fa-reddit-alien"></i></div>
+    <div class="gitHub"></div><i class="fab fa-github"></i></div>
+    </div>
+</footer>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
