@@ -1,13 +1,13 @@
 
   //cityName Input //
-    var cityName;
+    var cityName = 'Placeholder Name';
 
  function cityNameSet() {
     if (!document.getElementById("input-city-name")) {
       cityName = 'Placeholder Name';
    } else {
-      cityName = document.getElementById("input-city-name").value;
-  }
+  cityName = document.getElementById("input-city-name").value;
+   }
  }
 
   //Economy generator //
@@ -103,7 +103,7 @@ let tHeight = [' atop', ' beneath', ' next to', ' across from', ' due north of',
 
 let tLandmark = [ ' a mountain', ' a dark and mirror-smooth lake', ' a lively swamp', ' a rancid bog', ' a stand of burnt trees', ' a colorful meadow of wildflowers', ' an abandoned city', ' a thriving flea market', ' a mass grave', ' a bubbling hot spring', ' an acidic waterfall', ' a pool of magical runoff', ' a thick, luscious forest', ' a cave', ' a mysterious grove', ' a broken wizard\'s tower made of glass', ' an old castle', ' a fort', ' huge\, bottomless chasms left behind by some ancient civilization', ' a large city', ' a tiny farm', ' a village of kobolds and their papier m\âch\é dragon god', ' a huge cemetery', ' a cave full of goblins', ' a crystal-blue beach', ' an abandoned crystal quarry', ' a valley riddled with huge\, jagged rocks', ' a dead valley that was the site of an ancient battlefield', ' a cursed lake', ' a holy tree', ' a gravel beach', ' a sea', ' an ocean', ' a huge\, churning river', ' a deep valley filled with colorful rocks', ' a sprawling forest made of metal tree-like structures'];
 
-let tArchitecture = [' a gloomy atmosphere', ' a cheerful disposition', ' a hopeful allure', ' a dreary feeling', ' a bright\, youthful feeling', ' a rough and tumble vibe', ' a sprawling\, disorganized vibe', ' a quaint feeling', ' a charming vibe', ' a dangerous haze', ' a back-alley bar fight vibe', ' a romantic allure', ' an ominous atmosphere', ' an auspicious feeling', ' an overcast, run-down haze', ' an extraplanar feeling', ' a technological vibe', ' an underwater feel', ' a murky\, grimy haze'];
+let tArchitecture = [' a gloomy atmosphere', ' a cheerful disposition', ' a hopeful allure', ' a dreary feeling', ' a bright\, youthful feeling', ' a rough and tumble vibe', ' a sprawling\, disorganized vibe', ' a quaint feeling', ' a charming vibe', ' a dangerous haze', ' a back-alley bar fight vibe', ' a romantic allure', ' an ominous atmosphere', ' an auspicious feeling', ' an overcast and run-down haze', ' an extraplanar feeling', ' a technological vibe', ' an underwater feel', ' a murky\, grimy haze'];
 
 let compTownLocation;
 
@@ -116,7 +116,7 @@ function genSetLocation() {
 
 let setPopularity = [' isn\'t known for anything. It\'s been utterly forgotten by all but its closest neighbors', ' is known for its weaponry', ' is known for its festivals', ' is known for its eclectic use of magic', ' is known for its unique cuisine', ' is known as the birthplace of an ancient hero', ' is known for being a black market haven', ' is known for being friendly to rebels', ' is known for producing renowned animal handlers', ' is known for wild, localized weather patterns unlike anything the rest of the realm experiences', ' is known for producing world-class healers', ' is known for producing world-class soldiers', ' is known to be friendly toward assassins', ' is known to be hostile to outsiders', ' is known for its incredibly fertile, arable land', ' is known to be frequently targeted by local governments', ' is a known entrance to the Underdark', ' is a known holy site', ' is thought to be cursed', ' is thought to be blessed'];
 
-let setFutureProspects = [' facing a plague', ' peaceful', ' facing a looming food shortage', ' losing their fight against a neighboring faction', ' struggling to maintain trade good stockpiles due to hostiles blocking trade routes', ' facing a crisis brought on by local wizards dabbling too freely in wild magic', ' slowly being crushed by unfair taxes based on an old family grudge', ' struggling to find enough buyers to sell their over-produced trade goods. Local prices are plummeting', ' facing a disease affecting all nearby plants -- including trees', ' being poisoned by a tainted water source', ' rapidly losing its populace\'s sanity to a low, incessant whisper', ' sinking into the earth at an alarming rate', ' being surrounded by mysterious crystals taller than towers that seem to appear overnight', ' plagued by civil infighting', ' raising the alarm at the sudden presence of a huge beast', ' reeling from a rash of crimes committed by citizens who were peaceful less than a fortnight ago'];
+let setFutureProspects = [' facing a plague', ' peaceful', ' facing a looming food shortage', ' losing their fight against a neighboring faction', ' struggling to maintain trade good stockpiles due to hostiles blocking trade routes', ' facing a crisis brought on by local wizards dabbling too freely in wild magic', ' being suffocated by unfair taxes based on an old family grudge', ' struggling to find enough buyers to sell their over-produced trade goods. Local prices are plummeting', ' facing a disease affecting all nearby plants -- including trees', ' being poisoned by a tainted water source', ' rapidly losing its populace\'s sanity to a low, incessant whisper', ' sinking into the earth at an alarming rate', ' being surrounded by mysterious crystals taller than towers that seem to appear overnight', ' plagued by civil infighting', ' raising the alarm at the sudden presence of a huge beast', ' reeling from a rash of crimes committed by citizens who were peaceful less than a fortnight ago'];
 
 function genSetPlot() {
   setPlot = `It ${generate(setPopularity)}. At present, ${(cityName)} is${generate(setFutureProspects)}.`;
@@ -129,5 +129,3 @@ function genSetFinished() {
   genSetComplete = `${compTownEcon} ${compTownLocation} ${compTownAlign} ${setPlot}`;
   document.getElementById("generated-town").innerHTML = genSetComplete;
 }
-
-//Reset button
