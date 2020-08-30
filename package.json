@@ -15,5 +15,8 @@
     "D&D"
   ],
   "author": "Angelika Blackburn",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.1"
+  }
 }
